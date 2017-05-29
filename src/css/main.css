@@ -1,0 +1,68 @@
+@charset "UTF-8";
+body {
+  font: 14px/28px 'Microsoft Yahei','微软雅黑',Tahoma,Arial,Helvetica; }
+
+:global(#root) {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+:global(.theme-color) {
+  color: #F09A2B; }
+
+:global(.theme-bg-color) {
+  background-color: #F09A2B; }
+
+:global(.hover-color):hover {
+  color: #F09A2B; }
+
+:global(.hover-lighten-bg-color):hover {
+  background-color: #f5bc72; }
+  :global(.hover-lighten-bg-color):hover a {
+    color: #FFF; }
+
+:global(.font-color) {
+  color: #000; }
+
+:global(.assist-color) {
+  color: #999; }
+
+:global(.topbar-bg-color) {
+  background-color: #FCFCFC; }
+
+:global(.swiper-slide) {
+  height: 400px !important;
+  width: 100% !important; }
+  :global(.swiper-slide) img {
+    position: absolute;
+    left: 50%;
+    margin-left: -960px; }
+
+:global(.swiper-slide-active) img {
+  z-index: 10; }
+
+:global(.swiper-pagination-bullet) {
+  width: 12px;
+  height: 12px;
+  background: #FFF;
+  opacity: 1; }
+
+:global(.swiper-pagination-bullet-active) {
+  background: #F09A2B; }
+
+:global(.swiper-button-prev), :global(.swiper-button-next) {
+  width: 60px;
+  height: 60px;
+  background-size: 60px 60px; }
+
+:global(.swiper-button-prev) {
+  background-image: url(../assets/banner_jt_left.png);
+  left: 50px; }
+  :global(.swiper-button-prev):hover {
+    background-image: url(../assets/banner_jt_left_visited.png); }
+
+:global(.swiper-button-next) {
+  background-image: url(../assets/banner_jt_right.png);
+  right: 50px; }
+  :global(.swiper-button-next):hover {
+    background-image: url(../assets/banner_jt_right_visited.png); }

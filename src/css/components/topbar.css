@@ -1,0 +1,15 @@
+.topbar {
+  text-align: right;
+  padding: 5px 0px; }
+
+.topbar-inner {
+  width: 1000px;
+  margin: 0 auto; }
+  .topbar-inner a {
+    text-decoration: none; }
+
+.radius {
+  color: #fff;
+  padding: 0 5px;
+  border-radius: 5px;
+  font-size: 1em; }

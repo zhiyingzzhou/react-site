@@ -1,0 +1,47 @@
+:global(.swiper-slide) {
+    height: 400px !important;
+    width: 100% !important;
+    img {
+        position: absolute;
+        left: 50%;
+        margin-left: -960px;
+    }
+}
+:global(.swiper-slide-active) {
+    img {
+        z-index: 10;
+    }
+}
+
+// pagination
+:global(.swiper-pagination-bullet) {
+    width: 12px;
+    height: 12px;
+    background: #FFF;
+    opacity: 1;
+}
+
+:global(.swiper-pagination-bullet-active) {
+    background: $theme-color;
+}
+
+// swiper-button
+:global(.swiper-button-prev),:global(.swiper-button-next){
+    width: 60px;
+    height: 60px;
+    background-size: 60px 60px;
+}
+:global(.swiper-button-prev) {
+    background-image: url(../assets/banner_jt_left.png);
+    left: 50px;
+    &:hover {
+        background-image: url(../assets/banner_jt_left_visited.png);
+    }
+}
+:global(.swiper-button-next) {
+    background-image: url(../assets/banner_jt_right.png);
+    right: 50px;
+    &:hover {
+        background-image: url(../assets/banner_jt_right_visited.png);
+    }
+}

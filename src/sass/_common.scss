@@ -1,0 +1,32 @@
+// 主题颜色
+:global(.theme-color) {
+    color: $theme-color;
+}
+:global(.theme-bg-color) {
+    background-color: $theme-color;
+}
+:global(.hover-color) {
+    &:hover {
+        color: $theme-color;
+    }
+}
+:global(.hover-lighten-bg-color) {
+    &:hover {
+        background-color: lighten($theme-color, 15) ;
+        a {
+            color: #FFF;
+        }
+    }
+}
+//字体主题色
+:global(.font-color) {
+    color: $font-color;
+}
+// 字体辅助色
+:global(.assist-color) {
+    color: $assist-color;
+}
+//topbar背景颜色
+:global(.topbar-bg-color) {
+    background-color: $topbar-bg-color;
+}

@@ -1,0 +1,30 @@
+.navbar {
+  height: 80px;
+  line-height: 80px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee; }
+  .navbar a:first-child {
+    float: left; }
+    .navbar a:first-child img {
+      vertical-align: middle;
+      height: 70px; }
+  .navbar ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+  .navbar li {
+    float: left;
+    display: inline;
+    font-size: 1.3em; }
+    .navbar li.active a {
+      color: #FFF; }
+    .navbar li a {
+      text-decoration: none;
+      width: 130px;
+      text-align: center; }
+
+.navbar-inner {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: auto; }

@@ -1,0 +1,9 @@
+body{
+    font:14px/28px 'Microsoft Yahei','微软雅黑',Tahoma,Arial,Helvetica;
+}
+
+:global(#root) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
