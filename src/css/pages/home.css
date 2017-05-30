@@ -1,0 +1,110 @@
+.row {
+  width: 1000px;
+  margin: 20px auto; }
+
+.col-left {
+  width: 721px; }
+
+.col-right {
+  width: 260px; }
+
+.title {
+  border: 1px solid #eee;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  background-color: #FFF; }
+  .title li {
+    width: 140px;
+    float: left;
+    display: inline;
+    text-align: center;
+    font-size: 1.2em; }
+    .title li a:focus {
+      text-decoration: none; }
+
+.extra {
+  background: url(../../assets/fire.png) no-repeat 12px 12px;
+  width: 140px;
+  font-size: 1.2em;
+  color: #FFF;
+  text-indent: 45px;
+  margin-top: -1px;
+  margin-left: -1px;
+  height: 50px; }
+
+.menu {
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+  background-color: #FFF;
+  overflow: hidden; }
+  .menu div {
+    text-align: center;
+    width: 120px;
+    padding: 5px 0;
+    border-left: 1px solid #eee;
+    float: left;
+    display: inline;
+    margin-left: -1px; }
+
+.tips {
+  text-align: center;
+  border: 1px solid #eee;
+  background-color: #F4F4F4;
+  padding: 5px;
+  margin-bottom: 20px; }
+  .tips a {
+    text-decoration: underline;
+    color: #63a1f2; }
+
+.box {
+  border: 1px solid #eee;
+  margin-bottom: 15px;
+  width: 149px;
+  text-align: center;
+  padding: 15px;
+  background-color: #FFF;
+  float: left;
+  display: inline;
+  margin-left: -1px;
+  position: relative;
+  box-sizing: initial; }
+  .box strong {
+    display: block; }
+  .box p {
+    font-size: 0.8em;
+    line-height: 16px;
+    padding-bottom: 10px; }
+
+.qc {
+  background: url(../../assets/loading.gif) no-repeat 50% 50%;
+  height: 100px; }
+  .qc img {
+    border-radius: 17px; }
+
+.pagination {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 0; }
+  .pagination li {
+    display: inline-block;
+    margin: 0 3px; }
+    .pagination li a {
+      color: #F09A2B;
+      border: 1px solid #eee; }
+      .pagination li a:hover {
+        color: #F09A2B;
+        border-color: #eee; }
+    .pagination li:global(.active) a {
+      border-color: #F09A2B;
+      background-color: #F09A2B; }
+      .pagination li:global(.active) a:hover {
+        border-color: #f3b15b;
+        background-color: #f3b15b; }
+      .pagination li:global(.active) a:focus {
+        border-color: #F09A2B;
+        background-color: #F09A2B; }
+    .pagination li:global(.disabled) a {
+      color: #F09A2B;
+      border: 1px solid #eee; }

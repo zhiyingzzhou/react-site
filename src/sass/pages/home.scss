@@ -1,0 +1,147 @@
+@import '../variable';
+
+.row {
+    width: 1000px;
+    margin: 20px auto;
+}
+
+.col-left {
+    width: 721px;
+}
+
+.col-right {
+    width: 260px;
+}
+
+.title {
+    border: 1px solid $border-color;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    background-color: $white-color;
+    li {
+        width: 140px;
+        float: left;
+        display: inline;
+        text-align: center;
+        font-size: 1.2em;
+        a {
+            &:focus {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// 优质推荐标题内容
+.extra {
+    background: url(../../assets/fire.png) no-repeat 12px 12px;
+    width: 140px;
+    font-size: 1.2em;
+    color: $white-color;
+    text-indent: 45px;
+    margin-top: -1px;
+    margin-left: -1px;
+    height: 50px;
+}
+
+// 优质推荐广告栏
+.menu {
+    border: 1px solid $border-color;
+    margin-bottom: 20px;
+    background-color: $white-color;
+    overflow: hidden;
+    div {
+        text-align: center;
+        width: 120px;
+        padding: 5px 0;
+        border-left: 1px solid $border-color;
+        float: left;
+        display: inline;
+        margin-left: -1px;
+    }
+}
+
+// 任务未登录提示
+.tips {
+    text-align: center;
+    border: 1px solid #eee;
+    background-color: #F4F4F4;
+    padding: 5px;
+    margin-bottom: 20px;
+    a {
+        text-decoration: underline;
+        color: #63a1f2;
+    }
+}
+
+.box {
+    border: 1px solid $border-color;
+    margin-bottom: 15px;
+    width: 149px;
+    text-align: center;
+    padding: 15px;
+    background-color: $white-color;
+    float: left;
+    display: inline;
+    margin-left: -1px;
+    position: relative;
+    box-sizing: initial;
+    strong {
+        display: block;
+    }
+    p {
+        font-size: 0.8em;
+        line-height: 16px;
+        padding-bottom: 10px;
+    }
+}
+
+.qc {
+    background: url(../../assets/loading.gif) no-repeat 50% 50%;
+    height: 100px;
+    img {
+        border-radius: 17px;
+    }
+}
+
+// pagination
+.pagination {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0;
+    li {
+        display: inline-block;
+        margin: 0 3px;
+        a {
+            color: $theme-color;
+            border: 1px solid $border-color;
+            &:hover {
+                color: $theme-color;
+                border-color:$border-color;
+            }
+        }
+        &:global(.active){
+            a {
+                border-color: $theme-color;
+                background-color: $theme-color;
+                &:hover {
+                    border-color: lighten($theme-color, 10);
+                    background-color: lighten($theme-color, 10);
+                }
+                &:focus {
+                    border-color: $theme-color;
+                    background-color: $theme-color;
+                }
+            }
+        }
+        &:global(.disabled) {
+            a {
+                color: $theme-color;
+                border: 1px solid $border-color;
+            }
+        }
+    }
+}
+

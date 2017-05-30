@@ -1,25 +1,45 @@
 @charset "UTF-8";
 body {
-  font: 14px/28px 'Microsoft Yahei','微软雅黑',Tahoma,Arial,Helvetica; }
+  font: 14px/28px 'Microsoft Yahei','微软雅黑',Tahoma,Arial,Helvetica;
+  background-color: #FAFAFA; }
 
 :global(#root) {
   position: absolute;
   width: 100%;
   height: 100%; }
 
+ul {
+  padding: 0;
+  list-style-type: none; }
+
+p {
+  margin: 0; }
+
 :global(.theme-color) {
   color: #F09A2B; }
 
 :global(.theme-bg-color) {
-  background-color: #F09A2B; }
+  background-color: #F09A2B !important; }
 
-:global(.hover-color):hover {
+:global(.hover-theme-color):hover {
   color: #F09A2B; }
+
+:global(.hover-theme-color):focus {
+  color: #F09A2B; }
+
+:global(.hover-white-color):hover {
+  color: #FFF; }
+
+:global(.hover-white-color):focus {
+  color: #FFF; }
 
 :global(.hover-lighten-bg-color):hover {
   background-color: #f5bc72; }
   :global(.hover-lighten-bg-color):hover a {
     color: #FFF; }
+
+:global(.white-color) {
+  color: #FFF; }
 
 :global(.font-color) {
   color: #000; }

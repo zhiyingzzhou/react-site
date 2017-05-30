@@ -8,14 +8,13 @@
 .topbar-inner {
     width: 1000px;
     margin: 0 auto;
-
     a {
         text-decoration: none;
     }
 }
 
 .radius {
-    color: #fff;
+    color: $white-color;
     padding: 0 5px;
     border-radius: 5px;
     font-size: 1em;

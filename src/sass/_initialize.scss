@@ -1,9 +1,19 @@
 body{
     font:14px/28px 'Microsoft Yahei','微软雅黑',Tahoma,Arial,Helvetica;
+    background-color: #FAFAFA;
 }
 
 :global(#root) {
     position: absolute;
     width: 100%;
     height: 100%;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+p {
+    margin: 0;
 }

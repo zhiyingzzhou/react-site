@@ -13,7 +13,7 @@ let RouteConfig = {
                 require.ensure([], (require) => {
                     cb(null, require('pages/home').default)
                 }, 'HomePage')
-            } 
+            }
         },
         childRoutes: [
             
