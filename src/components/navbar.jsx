@@ -25,8 +25,8 @@ class NavBarComponent  extends Component {
     ]
 
     render() {
-        const {location} = this.props;
-        const {pathname} = location;
+        const {location} = this.props,
+            {pathname} = location;
         return (
             <div className={styles.navbar}>
                 <div className={styles['navbar-inner']}>
@@ -40,7 +40,10 @@ class NavBarComponent  extends Component {
                                 return (
                                     <li key={index}
                                         className={
-                                            pathname.indexOf(item.path) !== -1 ? 'theme-bg-color '+styles.active : 'hover-lighten-bg-color '}
+                                            pathname.indexOf(item.path) !== -1 ? 
+                                            'theme-bg-color '+styles.active : 
+                                            'hover-lighten-bg-color '
+                                        }
                                     >
                                         <Link to={path} className="font-color">
                                             {text}

@@ -27,9 +27,6 @@ class FocusTaskComponent  extends Component {
         const {data,activePage} = this.state;
         return (
             <div>
-                <div className="loading">
-
-                </div>
                 {
                     data.map((item,index)=>{
                         const {src,title,fansnum,price} = item;

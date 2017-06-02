@@ -13,6 +13,8 @@
     width: 260px;
 }
 
+// ========== col-left start ==========
+
 .title {
     border: 1px solid $border-color;
     height: 50px;
@@ -145,3 +147,235 @@
     }
 }
 
+// ========== col-left end ==========
+
+// ========== col-right start ==========
+
+.profile {
+    border: 1px solid $border-color;
+    padding: 10px 5px;
+    margin: 0 0 20px;
+    background-color: $white-color;
+}
+
+// ===== 用户登录 start =====
+.column_name {
+    font-size: 1.2em;
+    border-bottom: 1px solid $border-color;
+    padding: 0 0 10px;
+    margin: 0 10px;
+}
+
+.profile-form {
+    margin: 0 0 0 15px;
+    li {
+        padding: 20px 0 0;
+        &:last-child {
+            padding-top: 0;
+        }
+    }
+    input[type='text'],input[type='password'] {
+        width: 205px;
+        border: 1px solid $border-color;
+        height: 24px;
+        padding: 5px;
+        display: inline;
+        box-sizing: initial;
+        &.verify-code {
+            width: 125px;
+        }
+    }
+    input[type='checkbox'] {
+        margin-top: 7px;
+        margin-left: -18px;
+    }
+    button {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 1em;
+        border: none;
+        border-radius: 5px;
+        color: #FFF;
+        &:hover,&:focus,&:active,&:active:focus {
+            outline: none;
+            color: #FFF;
+        }
+        &:last-child {
+            margin: 15px 0;
+            background-color: #63A2F2;
+            &:active:focus {
+                background-color:#63A2F2;
+            }
+        }
+    }
+}
+
+// 忘记密码
+.forget-passwd {
+    margin-right: 15px;
+    text-decoration: none;
+    color: $font-color;
+}
+
+// ===== 用户登录 end =====
+
+// ===== 用户信息 start =====
+.info {
+    padding: 0 0 10px 10px;
+    position: relative;
+    table {
+        width: 140px;
+        margin-left: 90px;
+    }
+    tr {
+        &:first-child {
+            td:first-child {
+                font-size: 1em;
+                padding-bottom: 5px;
+                font-weight: 600;
+                color: $font-color;
+            }
+        }
+        td {
+            &:first-child {
+                color: $assist-color;
+            }
+        }
+    }
+    td {
+        line-height: 24px;
+    }
+}
+
+.radius {
+    color: #fff;
+    border-radius: 5px;
+    padding: 1px 5px;
+    font-size: 0.8em;
+}
+
+// 提示信息
+.help_tips {
+    position: absolute;
+    width: 180px;
+    padding: 5px 0 5px 10px;
+    font-size: 0.8em;
+    line-height: 18px;
+    background-color: $white-color;
+    border-radius: 5px;
+    border: 1px solid $border-color;
+    right: -25px;
+    top: -25px;
+    z-index: 98;
+    box-shadow: 0 1px 7px $border-color;
+    color: #aaa;
+    box-sizing: initial;
+    span {
+        background: url(../../assets/tcc_jt.png) no-repeat;
+        z-index: 99;
+        height: 14px;
+        width: 14px;
+        display: block;
+        position: absolute;
+        bottom: -11px;
+        right: 38px;
+    }
+}
+
+// 账户余额
+.balance {
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    line-height: 28px;
+}
+.col {
+    padding: 12px 15px;
+    &:first-child {
+        border-bottom: 1px solid $border-color;
+    }
+}
+
+.completed {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.button {
+    background-color: #ABABAB;
+    color: $white-color;
+    text-align: center;
+    padding: 5px 0;
+    width: 90%;
+    display: block;
+    height: 38px;
+    margin: 0 auto 5px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 0;
+    &:hover,&:active,&:focus,&:active:focus {
+        background-color: #ABABAB;
+        color: $white-color;
+        outline: none;
+        border: none;
+    }
+}
+
+.exchange {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    width: 90%;
+    padding: 10px 0;
+    button {
+        padding: 5px;
+        width: 42%;
+        color: $white-color;
+        height: 38px;
+        &:hover,&:active,&:focus,&:active:focus {
+            outline: none;
+            border: none;
+            color: $white-color;
+        }
+        &:first-child {
+            background-color: #63A2F2;
+            &:hover,&:active,&:focus,&:active:focus {
+                background-color: #63A2F2;
+            }
+        }
+        &:last-child {
+            &:hover,&:active,&:focus,&:active:focus {
+                background-color: $theme-color;
+            }
+        }
+    }
+}
+
+// ===== 播报
+.news {
+    border: 1px solid $border-color;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    background-color: $white-color;
+    line-height: 14px;
+}
+.scroll {
+    height: 235px;
+    overflow: hidden;
+}
+.panel {
+
+}
+.panel-item {
+    background: url(../../assets/sound_img.png) no-repeat 0 50%;
+    border-top: 1px solid $border-color;
+    padding: 15px 0 15px 40px;
+    margin-top: -1px;
+    overflow: hidden;
+    height: 29px;
+    box-sizing: initial;
+}
+
+
+// ===== 用户信息 end =====
+
+// ========== col-right end ==========

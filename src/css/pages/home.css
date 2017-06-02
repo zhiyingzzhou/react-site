@@ -108,3 +108,175 @@
     .pagination li:global(.disabled) a {
       color: #F09A2B;
       border: 1px solid #eee; }
+
+.profile {
+  border: 1px solid #eee;
+  padding: 10px 5px;
+  margin: 0 0 20px;
+  background-color: #FFF; }
+
+.column_name {
+  font-size: 1.2em;
+  border-bottom: 1px solid #eee;
+  padding: 0 0 10px;
+  margin: 0 10px; }
+
+.profile-form {
+  margin: 0 0 0 15px; }
+  .profile-form li {
+    padding: 20px 0 0; }
+    .profile-form li:last-child {
+      padding-top: 0; }
+  .profile-form input[type='text'], .profile-form input[type='password'] {
+    width: 205px;
+    border: 1px solid #eee;
+    height: 24px;
+    padding: 5px;
+    display: inline;
+    box-sizing: initial; }
+    .profile-form input[type='text'].verify-code, .profile-form input[type='password'].verify-code {
+      width: 125px; }
+  .profile-form input[type='checkbox'] {
+    margin-top: 7px;
+    margin-left: -18px; }
+  .profile-form button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    color: #FFF; }
+    .profile-form button:hover, .profile-form button:focus, .profile-form button:active, .profile-form button:active:focus {
+      outline: none;
+      color: #FFF; }
+    .profile-form button:last-child {
+      margin: 15px 0;
+      background-color: #63A2F2; }
+      .profile-form button:last-child:active:focus {
+        background-color: #63A2F2; }
+
+.forget-passwd {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #000; }
+
+.info {
+  padding: 0 0 10px 10px;
+  position: relative; }
+  .info table {
+    width: 140px;
+    margin-left: 90px; }
+  .info tr:first-child td:first-child {
+    font-size: 1em;
+    padding-bottom: 5px;
+    font-weight: 600;
+    color: #000; }
+  .info tr td:first-child {
+    color: #999; }
+  .info td {
+    line-height: 24px; }
+
+.radius {
+  color: #fff;
+  border-radius: 5px;
+  padding: 1px 5px;
+  font-size: 0.8em; }
+
+.help_tips {
+  position: absolute;
+  width: 180px;
+  padding: 5px 0 5px 10px;
+  font-size: 0.8em;
+  line-height: 18px;
+  background-color: #FFF;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  right: -25px;
+  top: -25px;
+  z-index: 98;
+  box-shadow: 0 1px 7px #eee;
+  color: #aaa;
+  box-sizing: initial; }
+  .help_tips span {
+    background: url(../../assets/tcc_jt.png) no-repeat;
+    z-index: 99;
+    height: 14px;
+    width: 14px;
+    display: block;
+    position: absolute;
+    bottom: -11px;
+    right: 38px; }
+
+.balance {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  line-height: 28px; }
+
+.col {
+  padding: 12px 15px; }
+  .col:first-child {
+    border-bottom: 1px solid #eee; }
+
+.completed {
+  text-align: center;
+  padding: 10px 0; }
+
+.button {
+  background-color: #ABABAB;
+  color: #FFF;
+  text-align: center;
+  padding: 5px 0;
+  width: 90%;
+  display: block;
+  height: 38px;
+  margin: 0 auto 5px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 0; }
+  .button:hover, .button:active, .button:focus, .button:active:focus {
+    background-color: #ABABAB;
+    color: #FFF;
+    outline: none;
+    border: none; }
+
+.exchange {
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  width: 90%;
+  padding: 10px 0; }
+  .exchange button {
+    padding: 5px;
+    width: 42%;
+    color: #FFF;
+    height: 38px; }
+    .exchange button:hover, .exchange button:active, .exchange button:focus, .exchange button:active:focus {
+      outline: none;
+      border: none;
+      color: #FFF; }
+    .exchange button:first-child {
+      background-color: #63A2F2; }
+      .exchange button:first-child:hover, .exchange button:first-child:active, .exchange button:first-child:focus, .exchange button:first-child:active:focus {
+        background-color: #63A2F2; }
+    .exchange button:last-child:hover, .exchange button:last-child:active, .exchange button:last-child:focus, .exchange button:last-child:active:focus {
+      background-color: #F09A2B; }
+
+.news {
+  border: 1px solid #eee;
+  padding: 0 15px;
+  margin-bottom: 20px;
+  background-color: #FFF;
+  line-height: 14px; }
+
+.scroll {
+  height: 235px;
+  overflow: hidden; }
+
+.panel-item {
+  background: url(../../assets/sound_img.png) no-repeat 0 50%;
+  border-top: 1px solid #eee;
+  padding: 15px 0 15px 40px;
+  margin-top: -1px;
+  overflow: hidden;
+  height: 29px;
+  box-sizing: initial; }

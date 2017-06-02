@@ -2,7 +2,8 @@
   height: 80px;
   line-height: 80px;
   border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee; }
+  border-bottom: 1px solid #eee;
+  background-color: #FFF; }
   .navbar a:first-child {
     float: left; }
     .navbar a:first-child img {
