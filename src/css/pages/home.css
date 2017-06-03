@@ -261,16 +261,12 @@
     .exchange button:last-child:hover, .exchange button:last-child:active, .exchange button:last-child:focus, .exchange button:last-child:active:focus {
       background-color: #F09A2B; }
 
-.news {
+.notice {
   border: 1px solid #eee;
   padding: 0 15px;
   margin-bottom: 20px;
   background-color: #FFF;
   line-height: 14px; }
-
-.scroll {
-  height: 235px;
-  overflow: hidden; }
 
 .panel-item {
   background: url(../../assets/sound_img.png) no-repeat 0 50%;
@@ -280,3 +276,37 @@
   overflow: hidden;
   height: 29px;
   box-sizing: initial; }
+
+.system-notice {
+  border: 1px solid #eee;
+  padding: 0 15px;
+  position: relative;
+  margin-bottom: 20px;
+  background-color: #FFF; }
+
+.system-notice-title {
+  padding: 10px 0;
+  height: 30px;
+  font-size: 1.2em;
+  box-sizing: initial;
+  border-bottom: 1px solid #eee; }
+  .system-notice-title a {
+    padding: 10px;
+    background: url(../../assets/arrow_right.png) no-repeat 50% 50%;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    height: 30px; }
+
+.system-notice-item {
+  background: url(../../assets/dotted.png) no-repeat 0 16px;
+  border-bottom: 1px solid #eee;
+  line-height: 18px;
+  padding-left: 12px;
+  padding: 10px 0 10px 12px; }
+  .system-notice-item div {
+    color: #000;
+    cursor: pointer; }
+  .system-notice-item time {
+    color: #ccc;
+    font-size: 0.8em; }

@@ -351,20 +351,14 @@
 }
 
 // ===== 播报
-.news {
+.notice {
     border: 1px solid $border-color;
     padding: 0 15px;
     margin-bottom: 20px;
     background-color: $white-color;
     line-height: 14px;
 }
-.scroll {
-    height: 235px;
-    overflow: hidden;
-}
-.panel {
 
-}
 .panel-item {
     background: url(../../assets/sound_img.png) no-repeat 0 50%;
     border-top: 1px solid $border-color;
@@ -373,6 +367,47 @@
     overflow: hidden;
     height: 29px;
     box-sizing: initial;
+}
+
+// ===== 系统公告
+.system-notice {
+    border: 1px solid $border-color;
+    padding: 0 15px;
+    position: relative;
+    margin-bottom: 20px;
+    background-color: $white-color;
+}
+
+.system-notice-title {
+    padding: 10px 0;
+    height: 30px;
+    font-size: 1.2em;
+    box-sizing: initial;
+    border-bottom: 1px solid $border-color;
+    a {
+        padding: 10px;
+        background: url(../../assets/arrow_right.png) no-repeat 50% 50%;
+        position: absolute;
+        right: 15px;
+        top: 0;
+        height: 30px; 
+    }
+}
+
+.system-notice-item {
+    background: url(../../assets/dotted.png) no-repeat 0 16px;
+    border-bottom: 1px solid $border-color;
+    line-height: 18px;
+    padding-left: 12px;
+    padding: 10px 0 10px 12px;
+    div {
+        color: $font-color;
+        cursor: pointer;
+    }
+    time {
+        color: #ccc;
+        font-size: 0.8em;
+    }
 }
 
 

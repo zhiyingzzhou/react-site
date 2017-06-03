@@ -5,14 +5,16 @@ import Col from 'react-bootstrap/lib/Col';
 import styles from 'css/pages/home.css';
 
 import ProfileComponent from './right/profile';
-import ScrollNewsComponent from './right/news';
+import ScrollNoticeComponent from './right/notice';
+import SystemNoticeComponent from './right/system-notice';
 
 class ColRightComponent  extends Component {
     render() {
         return (
             <Col className={"pull-right "+styles['col-right']}>
                  <ProfileComponent />
-                 <ScrollNewsComponent />
+                 <ScrollNoticeComponent />
+                 <SystemNoticeComponent />
             </Col>
         );
     }

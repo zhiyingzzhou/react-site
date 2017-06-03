@@ -13,6 +13,10 @@ const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
 
+function resolve(dir){
+  return path.resolve(__dirname,'..',dir);
+}
+
 // Webpack uses `publicPath` to determine where the app is being served from.
 // It requires a trailing slash, or the file assets will get an incorrect path.
 const publicPath = paths.servedPath;
@@ -88,6 +92,13 @@ module.exports = {
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',
+      'router': resolve('src/router'),
+      'actions': resolve('src/actions'),
+      'constants': resolve('src/constants'),
+      'reducer': resolve('src/reducer'),
+      'pages': resolve('src/pages'),
+      'components': resolve('src/components'),
+      'css': resolve('src/css')
     },
     plugins: [
       // Prevents users from importing files from outside of src/ (or node_modules/).
@@ -187,6 +198,7 @@ module.exports = {
                     importLoaders: 1,
                     minimize: true,
                     sourceMap: true,
+                    modules: true
                   },
                 },
                 {
