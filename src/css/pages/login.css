@@ -1,0 +1,63 @@
+.desc {
+  background-color: #FFAE1F;
+  margin-top: -1px; }
+
+.container {
+  background: url(../../assets/dl_pic.png) no-repeat;
+  min-height: 546px;
+  margin: 0 auto;
+  width: 1000px; }
+
+.block {
+  float: right;
+  background-color: #FFF;
+  width: 390px;
+  margin: 45px 0 0;
+  position: relative; }
+  .block strong {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    font-weight: 500;
+    display: block;
+    border-bottom: 1px solid #eee; }
+
+.form {
+  display: block;
+  padding: 10px 0 20px 20px; }
+  .form table {
+    margin: 20px 0 20px 10px;
+    border-collapse: collapse;
+    border-spacing: 0; }
+  .form th {
+    padding: 5px 0 0;
+    text-align: center;
+    vertical-align: top; }
+    .form th label {
+      display: block;
+      background-color: #F4F4F4;
+      border: 1px solid #eee;
+      padding: 3px 10px;
+      border-right: 0;
+      width: 80px; }
+  .form td {
+    padding: 5px 0 20px; }
+  .form input[type='text'], .form input[type="password"] {
+    box-sizing: initial;
+    width: 240px;
+    border: 1px solid #eee;
+    height: 24px;
+    padding: 5px;
+    display: inline; }
+  .form input[type='checkbox'] {
+    margin-top: 7px;
+    margin-left: -18px; }
+  .form button {
+    width: 330px;
+    height: 39px;
+    background-color: #F09A2B;
+    border: none;
+    padding: 10px 0;
+    color: #FFF;
+    font-size: 1em;
+    box-sizing: inherit;
+    border-radius: 5px; }

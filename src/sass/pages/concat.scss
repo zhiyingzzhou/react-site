@@ -1,0 +1,67 @@
+@import '../variable';
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -1px;
+    height: 194px;
+    background: url(../../assets/lxwm_banner.png) no-repeat 50% 0;
+    z-index: 1;
+    position: relative;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1000px;
+    margin-bottom: 30px;
+    ul {
+        overflow: hidden;
+        display: inline-block;
+        padding: 10px 0;
+        list-style: disc;
+    }
+    li {
+        padding-left: 40px;
+        display: block;
+        width: 420px;
+        float: left;
+        line-height: 40px;
+        margin-left: 0;
+        list-style-type: none;
+        &:first-child {
+            background: url(../../assets/lxwm0.png) no-repeat 0 50%;
+            &+li {
+                background: url(../../assets/lxwm1.png) no-repeat 0 50%;
+            }
+            &+li+li {
+                background: url(../../assets/lxwm4.png) no-repeat 0 50%;
+            }
+            &+li+li+li {
+                background: url(../../assets/lxwm2.png) no-repeat 0 50%;
+            }
+        }
+        &:last-child {
+            background: url(../../assets/lxwm3.png) no-repeat 0 50%;
+        }
+    }
+}
+
+.solid {
+    border: 1px solid $border-color;
+    padding: 20px;
+    background-color: $white-color;
+    border-top: 2px solid $theme-color;
+}
+
+.column-name {
+    padding: 0 10px 20px;
+    font-size: 1.5em;
+}
+
+//地图
+:global(#map-container) {
+    width: 956px;
+    height: 462px;
+    border: #ccc solid 1px;
+} 
+

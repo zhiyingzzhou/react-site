@@ -8,6 +8,7 @@
 }
 // 鼠标悬浮字体显示主题颜色
 :global(.hover-theme-color) {
+    cursor: pointer;
     &:hover {
         color: $theme-color;
     }
@@ -48,4 +49,26 @@
 //topbar背景颜色
 :global(.topbar-bg-color) {
     background-color: $topbar-bg-color;
+}
+
+//NProgress
+:global(#nprogress) {
+    :global(.bar) {
+        background: $theme-color;
+    }
+    :global(.peg) {
+        box-shadow: 0 0 10px $theme-color, 0 0 5px $theme-color;
+    }
+    :global(.spinner-icon) {
+        border-top-color: $theme-color;
+        border-left-color: $theme-color;
+    }
+}
+
+img {
+    color: transparent;
+    font-size: 0;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+    border: 0;
 }

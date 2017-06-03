@@ -7,10 +7,11 @@ import NabarComponent from 'components/navbar';
 
 export default class App extends Component {
   render() {
+    const {location} = this.props;
     return (
         <Scrollbars style={{width:'100%',height:'100%'}}>
-            <TopBarComponent  />
-            <NabarComponent location={this.props.location} />
+            <TopBarComponent location={location} />
+            <NabarComponent location={location} />
             {this.props.children}
         </Scrollbars>
     );

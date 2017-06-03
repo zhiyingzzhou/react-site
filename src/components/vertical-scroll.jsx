@@ -5,7 +5,8 @@ import styles from 'css/components/vertical-scroll.css';
 class VerticalScrollComponent  extends Component {
 
     Interval = null;
-    isDisabled = false;
+    Timeout = null;
+    pauseScroll = false;
 
     state = {
         marginTop: 0
@@ -21,6 +22,16 @@ class VerticalScrollComponent  extends Component {
         },2000);
     }
 
+    componentWillUnmount() {
+        this.clearLoop();
+        this.clearTimeout();
+    }
+
+    clearTimeout() {
+        if(this.Timeout === null) return ;
+        clearTimeout(this.Timeout);
+    }
+
     clearLoop = () => {
         if(this.Interval === null) return ;
         clearInterval(this.Interval);
@@ -29,7 +40,7 @@ class VerticalScrollComponent  extends Component {
     loop = () => {
         const {scrollCallBack} = this.props;
         let {marginTop} = this.state;
-        let step = 60;
+        let step = 60 + marginTop;
         this.Interval = setInterval(()=>{
             --step ;
             this.setState({
@@ -43,30 +54,11 @@ class VerticalScrollComponent  extends Component {
                 if(scrollCallBack){
                     scrollCallBack();
                 }
-                setTimeout(()=>{
-                    this.loop();
-                },2000);
-            }
-        },10);
-    }
-
-    resetPosition = () => {
-        const {scrollCallBack} = this.props;
-        let {marginTop} = this.state,
-            step = 60 + marginTop;
-        let loop = setInterval(()=>{
-            --step ;
-            this.setState({
-                marginTop: --marginTop
-            });
-            if(step == 0){
-                this.setState({
-                    marginTop: 0
-                });
-                if(scrollCallBack){
-                    scrollCallBack();
+                if(!this.pauseScroll){
+                    this.Timeout = setTimeout(()=>{
+                        this.loop();
+                    },2000);
                 }
-                clearInterval(loop);
             }
         },10);
     }
@@ -75,18 +67,17 @@ class VerticalScrollComponent  extends Component {
         const {marginTop} = this.state;
         const {autoplayDisableOnInteraction} = this.props;
         if(autoplayDisableOnInteraction) {
-            if(marginTop > -60 && marginTop < 0){
-                this.resetPosition();
-            }
-            this.isDisabled = true;
-            this.clearLoop();
+            this.pauseScroll = true;
+            this.clearTimeout();
         }
     }
 
     handleMouseLeave = () => {
-        if(this.isDisabled){
-            this.isDisabled = false;
-            this.loop();
+        if(this.pauseScroll){
+            this.pauseScroll = false;
+            this.Timeout = setTimeout(()=>{
+                this.loop();
+            },2000);
         }
     }
 

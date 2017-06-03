@@ -7,19 +7,19 @@ import styles from 'css/components/navbar.css';
 class NavBarComponent  extends Component {
     data = [
         {
-            path:'/',
+            path:'',
             text: '任务大厅'
         },
         {
-            path:'f',
+            path:'publish',
             text: '发布任务'
         },
         {
-            path:'f',
+            path:'marketing',
             text: '推广合作'
         },
         {
-            path:'f',
+            path:'concat',
             text: '联系我们'
         }
     ]
@@ -30,7 +30,7 @@ class NavBarComponent  extends Component {
         return (
             <div className={styles.navbar}>
                 <div className={styles['navbar-inner']}>
-                    <Link to="/">
+                    <Link to="/" onClick={pathname === '/' ? () => {} : ()=>window.NProgress.start()}>
                         <img src={`${process.env.PUBLIC_URL}/images/logo.jpg`} alt="粉快来" />
                     </Link>
                     <ul>
@@ -40,12 +40,16 @@ class NavBarComponent  extends Component {
                                 return (
                                     <li key={index}
                                         className={
-                                            pathname.indexOf(item.path) !== -1 ? 
+                                            pathname === '/'+item.path ? 
                                             'theme-bg-color '+styles.active : 
                                             'hover-lighten-bg-color '
                                         }
                                     >
-                                        <Link to={path} className="font-color">
+                                        <Link 
+                                            to={path} 
+                                            className="font-color"
+                                            onClick={pathname === '/'+item.path ? ()=>{} : () => window.NProgress.start() }
+                                        >
                                             {text}
                                         </Link>
                                     </li>

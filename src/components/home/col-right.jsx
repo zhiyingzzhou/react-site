@@ -7,6 +7,7 @@ import styles from 'css/pages/home.css';
 import ProfileComponent from './right/profile';
 import ScrollNoticeComponent from './right/notice';
 import SystemNoticeComponent from './right/system-notice';
+import FeedBackComponent from './right/feedback';
 
 class ColRightComponent  extends Component {
     render() {
@@ -15,6 +16,7 @@ class ColRightComponent  extends Component {
                  <ProfileComponent />
                  <ScrollNoticeComponent />
                  <SystemNoticeComponent />
+                 <FeedBackComponent />
             </Col>
         );
     }

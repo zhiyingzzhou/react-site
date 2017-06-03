@@ -310,3 +310,38 @@
   .system-notice-item time {
     color: #ccc;
     font-size: 0.8em; }
+
+.feedback {
+  border: 1px solid #eee;
+  padding: 0 15px 15px;
+  overflow: hidden;
+  position: relative;
+  background-color: #FFF; }
+  .feedback button {
+    background-color: #63A2F2;
+    float: right;
+    border: none;
+    padding: 10px 30px;
+    color: #FFF;
+    font-size: 1em;
+    margin-top: 10px;
+    border-radius: 5px; }
+
+.fb-cat {
+  padding: 5px 0; }
+
+.leave-word {
+  position: relative; }
+  .leave-word textarea {
+    width: 206px;
+    height: 86px;
+    border: 1px solid #eee;
+    padding: 10px;
+    resize: vertical;
+    box-sizing: initial; }
+
+.add-up {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  color: #ccc; }

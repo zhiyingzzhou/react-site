@@ -410,6 +410,48 @@
     }
 }
 
+// ===== 公告栏
+.feedback {
+    border: 1px solid $border-color;
+    padding: 0 15px 15px;
+    overflow: hidden;
+    position: relative;
+    background-color: $white-color;
+    button {
+        background-color: #63A2F2;
+        float: right;
+        border: none;
+        padding: 10px 30px;
+        color: $white-color;
+        font-size: 1em;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+}
+
+.fb-cat {
+    padding: 5px 0;
+}
+
+.leave-word {
+    position: relative;
+    textarea {
+        width: 206px;
+        height: 86px;
+        border: 1px solid $border-color;
+        padding: 10px; 
+        resize: vertical;
+        box-sizing: initial;
+    }
+}
+
+.add-up {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: #ccc;
+}
+
 
 // ===== 用户信息 end =====
 

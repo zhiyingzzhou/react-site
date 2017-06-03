@@ -21,11 +21,12 @@ p {
 :global(.theme-bg-color) {
   background-color: #F09A2B !important; }
 
-:global(.hover-theme-color):hover {
-  color: #F09A2B; }
-
-:global(.hover-theme-color):focus {
-  color: #F09A2B; }
+:global(.hover-theme-color) {
+  cursor: pointer; }
+  :global(.hover-theme-color):hover {
+    color: #F09A2B; }
+  :global(.hover-theme-color):focus {
+    color: #F09A2B; }
 
 :global(.hover-white-color):hover {
   color: #FFF; }
@@ -49,6 +50,23 @@ p {
 
 :global(.topbar-bg-color) {
   background-color: #FCFCFC; }
+
+:global(#nprogress) :global(.bar) {
+  background: #F09A2B; }
+
+:global(#nprogress) :global(.peg) {
+  box-shadow: 0 0 10px #F09A2B, 0 0 5px #F09A2B; }
+
+:global(#nprogress) :global(.spinner-icon) {
+  border-top-color: #F09A2B;
+  border-left-color: #F09A2B; }
+
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+  border: 0; }
 
 :global(.swiper-slide) {
   height: 400px !important;

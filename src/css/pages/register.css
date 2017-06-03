@@ -1,0 +1,63 @@
+.container {
+  margin: 0 auto;
+  width: 1000px; }
+
+.solid {
+  background-color: #FFF;
+  border: 1px solid #eee;
+  border-top: 2px solid #F09A2B;
+  padding-bottom: 30px; }
+
+.column-name {
+  font-size: 1.5em;
+  padding: 20px; }
+
+.login {
+  border-left: 1px solid #eee;
+  padding: 100px 0;
+  text-align: center;
+  width: 360px;
+  margin-top: -30px; }
+  .login p {
+    padding-bottom: 10px; }
+  .login a {
+    background-color: #F09A2B;
+    padding: 10px 50px;
+    color: #FFF;
+    font-size: 1em;
+    border-radius: 5px; }
+
+.form table {
+  margin: 20px;
+  margin-left: 160px;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.form th, .form td {
+  font-weight: normal;
+  vertical-align: top; }
+
+.form td {
+  padding: 5px 0 20px; }
+
+.form th {
+  text-align: right;
+  padding-right: 15px;
+  padding-top: 5px; }
+
+.form input[type='text'], .form input[type='password'] {
+  border: 1px solid #eee;
+  height: 24px;
+  padding: 5px;
+  width: 240px;
+  display: inline;
+  box-sizing: initial; }
+
+.form button {
+  background-color: #F09A2B;
+  border: none;
+  padding: 10px 0;
+  width: 252px;
+  color: #FFF;
+  font-size: 1em;
+  border-radius: 5px; }

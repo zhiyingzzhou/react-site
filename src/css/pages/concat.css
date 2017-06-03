@@ -1,0 +1,51 @@
+.banner {
+  width: 100%;
+  overflow: hidden;
+  margin-top: -1px;
+  height: 194px;
+  background: url(../../assets/lxwm_banner.png) no-repeat 50% 0;
+  z-index: 1;
+  position: relative; }
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+  margin-bottom: 30px; }
+  .container ul {
+    overflow: hidden;
+    display: inline-block;
+    padding: 10px 0;
+    list-style: disc; }
+  .container li {
+    padding-left: 40px;
+    display: block;
+    width: 420px;
+    float: left;
+    line-height: 40px;
+    margin-left: 0;
+    list-style-type: none; }
+    .container li:first-child {
+      background: url(../../assets/lxwm0.png) no-repeat 0 50%; }
+      .container li:first-child + li {
+        background: url(../../assets/lxwm1.png) no-repeat 0 50%; }
+      .container li:first-child + li + li {
+        background: url(../../assets/lxwm4.png) no-repeat 0 50%; }
+      .container li:first-child + li + li + li {
+        background: url(../../assets/lxwm2.png) no-repeat 0 50%; }
+    .container li:last-child {
+      background: url(../../assets/lxwm3.png) no-repeat 0 50%; }
+
+.solid {
+  border: 1px solid #eee;
+  padding: 20px;
+  background-color: #FFF;
+  border-top: 2px solid #F09A2B; }
+
+.column-name {
+  padding: 0 10px 20px;
+  font-size: 1.5em; }
+
+:global(#map-container) {
+  width: 956px;
+  height: 462px;
+  border: #ccc solid 1px; }

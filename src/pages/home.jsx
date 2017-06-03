@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
+import BasicPage from './basic-page';
 import Grid from 'react-bootstrap/lib/Grid';
 import Row from 'react-bootstrap/lib/Row';
 
 //css
 import styles from 'css/pages/home.css';
-
+import FooterComponents from 'components/footer';
 import BannerComponent from 'components/home/banner';
 import ColLeftComponent from 'components/home/col-left';
 import ColRightComponent from 'components/home/col-right';
 
+class HomePage extends BasicPage {
 
-class HomePage extends Component {
+  componentDidMount() {
+    this.hideNProgress();
+  }
+
   render() {
     
     return (
@@ -22,6 +27,7 @@ class HomePage extends Component {
                   <ColRightComponent />
               </Row>
           </Grid>
+          <FooterComponents />
       </div>
     );
   }

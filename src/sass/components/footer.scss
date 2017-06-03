@@ -1,0 +1,17 @@
+@import '../variable';
+
+.footer {
+    height: 60px;
+    width: 100%;
+    background-color: #3C3C3A;
+    color: $border-color;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    width: 1000px;
+}
