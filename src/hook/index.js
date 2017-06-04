@@ -4,7 +4,11 @@ export const onEnterLoginHook = (nextState,replace) => {
 
 // 权限验证
 export const requireAuthHook = (nextState,replace) => {
-   
+   const {location} = nextState;
+   const {pathname} = location;
+   if(pathname === 'publish'){
+       replace('login');
+   }
 }
 
 // 离开页面触发此钩子

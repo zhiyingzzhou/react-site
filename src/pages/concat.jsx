@@ -4,25 +4,31 @@ import FooterComponents from 'components/footer';
 //css
 import styles from 'css/pages/concat.css';
 
+function initializeMap() {
+    var BMap = window.BMap;
+    var map = new BMap.Map("map-container");       
+    var point = new BMap.Point(116.724782, 23.372552);  
+    map.centerAndZoom(point, 18);                   
+    map.addControl(new BMap.NavigationControl());
+    var opts = {    
+        width : 272,     
+        height: 87,         
+        title : "汕头市号角网络科技有限公司"   
+    }    
+    var infoWindow = new BMap.InfoWindow("地址：广东省汕头市龙湖区金砂东路长荣大厦", opts);   
+    map.openInfoWindow(infoWindow, map.getCenter());  
+}
+
 class ConcatPage extends BasicPage {
 
     componentDidMount() {
-        this.hideNProgress();
-        let BMap = window.BMap;
-        if(!BMap) return ;
-        var map = new BMap.Map("map-container");          // 创建地图实例  
-        var point = new BMap.Point(116.724782, 23.372552);  // 创建点坐标  
-        map.centerAndZoom(point, 18);                 // 初始化地图，设置中心点坐标和地图级别  
-        map.addControl(new BMap.NavigationControl());
-        // var marker = new BMap.Marker(point);        // 创建标注    
-        // map.addOverlay(marker);  
-        var opts = {    
-            width : 272,     // 信息窗口宽度    
-            height: 87,     // 信息窗口高度    
-            title : "汕头市号角网络科技有限公司"  // 信息窗口标题   
-        }    
-        var infoWindow = new BMap.InfoWindow("地址：广东省汕头市龙湖区金砂东路长荣大厦", opts);  // 创建信息窗口对象    
-        map.openInfoWindow(infoWindow, map.getCenter());      // 打开信息窗口
+        this.loadMapScript();
+    }
+
+    loadMapScript = () => {
+        var script = document.createElement("script");  
+        script.src = `http://api.map.baidu.com/api?v=2.0&ak=fbyE0tl3YOfc7uXUgttrCqGCQEpRAPUU&callback=${initializeMap}`;//此为v2.0版本的引用方式  
+        document.body.appendChild(script);  
     }
 
     render() {

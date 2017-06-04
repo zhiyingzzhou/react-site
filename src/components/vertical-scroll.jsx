@@ -9,7 +9,8 @@ class VerticalScrollComponent  extends Component {
     pauseScroll = false;
 
     state = {
-        marginTop: 0
+        marginTop: 0,
+        pause: false
     }
 
     defaultProps = {
@@ -17,9 +18,7 @@ class VerticalScrollComponent  extends Component {
     }
 
     componentDidMount() {
-        setTimeout(()=>{
-            this.loop();
-        },2000);
+        this.loop();
     }
 
     componentWillUnmount() {
@@ -28,12 +27,10 @@ class VerticalScrollComponent  extends Component {
     }
 
     clearTimeout() {
-        if(this.Timeout === null) return ;
         clearTimeout(this.Timeout);
     }
 
     clearLoop = () => {
-        if(this.Interval === null) return ;
         clearInterval(this.Interval);
     }
 
